@@ -175,10 +175,17 @@ public class WebViewManager : MonoBehaviour
     public void Back()
     {
         webViewObject.GoBack();
+        
     }
 
     public void Next()
     {
         webViewObject.GoForward();
     }
+
+    //public void Close()
+    //{
+    //    webViewObject.Close();
+    //}
+
 }
