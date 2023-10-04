@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
     [SerializeField] Rigidbody rb;
 
-    float horizontalInput;
+    int horizontalInput;
     [SerializeField] float horizontalMultiplier = 2;
 
     public float speedIncreasePerPoint = 0.1f;
@@ -24,18 +24,46 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
+        
+
+        //if (horizontalInput == 0)
+        //    horizontalMove += Vector3.left * horizontalMultiplier;
+        //else if (horizontalInput == 2)
+        //    horizontalMove += Vector3.right * horizontalMultiplier;
+
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
     }
 
     private void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+       // horizontalInput = Input.GetAxis("Horizontal");
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (SwipeController.swipeRight)
+        {
+            if (horizontalInput < 2)
+            {
+                horizontalInput++;
+            }
+            else horizontalInput = 0;
+        }
+
+        if (SwipeController.swipeLeft)
+        {
+           
+            if (horizontalInput > -1)
+            {
+                horizontalInput--;
+            }
+            else horizontalInput = 0;
+        }
+
+        
+        if (SwipeController.swipeUp)
         {
             Jump();
         }
 
+      
         if (transform.position.y < -5)
         {
             Die();
