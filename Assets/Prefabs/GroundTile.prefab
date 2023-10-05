@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puckPrefab: {fileID: 1112010534902490353, guid: 0c5003f33a4fa8b459c4d0ef47a58bc0, type: 3}
   obstaclePrefab: {fileID: 4936115353748422868, guid: 7d02370014f389c40979ed0e084128e0, type: 3}
+  gatePrefab: {fileID: 6929784532934354511, guid: d94a433e2e925354f997c0645a046335, type: 3}
 --- !u!1 &3725608311655419070
 GameObject:
   m_ObjectHideFlags: 0

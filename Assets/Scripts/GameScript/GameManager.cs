@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] PlayerMovement playerMovement;
 
+    public int ShowScore()
+    {
+        return score;
+    }
+
     public void IncrementScore()
     {
         score++;

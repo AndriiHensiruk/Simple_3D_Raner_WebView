@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundTile: {fileID: 3398071474341277656, guid: f8963271fad87534daa5207097bd3141, type: 3}
+  gateTile: {fileID: 6929784532934354511, guid: d94a433e2e925354f997c0645a046335, type: 3}
 --- !u!4 &601810318
 Transform:
   m_ObjectHideFlags: 0

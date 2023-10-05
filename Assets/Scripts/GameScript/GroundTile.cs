@@ -7,14 +7,20 @@ public class GroundTile : MonoBehaviour
     [SerializeField] GameObject puckPrefab;
     [SerializeField] GameObject obstaclePrefab;
 
+
     private void Start()
     {
         groundSpawner = GameObject.FindObjectOfType<GroundSpawner>();
+       
     }
 
     private void OnTriggerExit(Collider other)
     {
+        if (GameManager.inst.ShowScore()>3)
+            return;
+        else
         groundSpawner.SpawnTile(true);
+
         Destroy(gameObject, 2);
     }
 
@@ -39,6 +45,8 @@ public class GroundTile : MonoBehaviour
         }
     }
 
+   
+
     Vector3 GetRandomPointInCollider(Collider collider)
     {
         Vector3 point = new Vector3(
@@ -55,3 +63,4 @@ public class GroundTile : MonoBehaviour
         return point;
     }
 }
+

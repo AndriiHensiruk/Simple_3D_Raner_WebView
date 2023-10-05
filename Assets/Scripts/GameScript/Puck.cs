@@ -5,6 +5,8 @@ using UnityEngine;
 public class Puck : MonoBehaviour
 {
     [SerializeField] float turnSpeed = 90f;
+    [SerializeField] float shockForse = 90f;
+    [SerializeField] Transform target;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,7 +29,11 @@ public class Puck : MonoBehaviour
         Destroy(gameObject);
     }
 
-
+    private void Shoot()
+    {
+        Vector3 Shoot = (target.position - this.transform.position).normalized;
+        GetComponent<Rigidbody>().AddForce(Shoot * shockForse, ForceMode.Impulse);
+    }
     private void Update()
     {
         transform.Rotate(0, 0, turnSpeed * Time.deltaTime);
