@@ -23,7 +23,14 @@ public class GroundSpawner : MonoBehaviour
            
     }
 
+    public void SpawnGateTile()
+    {
 
+        GameObject temp = Instantiate(gateTile, nextSpawnPoint, Quaternion.identity);
+        nextSpawnPoint = temp.transform.GetChild(1).transform.position;
+
+      
+    }
 
     private void Start()
     {

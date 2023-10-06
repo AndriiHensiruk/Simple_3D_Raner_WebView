@@ -16,8 +16,8 @@ public class GroundTile : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (GameManager.inst.ShowScore()>3)
-            return;
+        if (GameManager.inst.ShowScore() > 1)
+            groundSpawner.SpawnGateTile() ;
         else
         groundSpawner.SpawnTile(true);
 

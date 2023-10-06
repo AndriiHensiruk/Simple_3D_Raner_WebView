@@ -5,11 +5,12 @@ public class PlayerMovement : MonoBehaviour
 {
 
     bool alive = true;
-
+    
     public float speed = 5;
+    float moowSpeed = 1000;
     [SerializeField] Rigidbody rb;
 
-    int horizontalInput;
+    float horizontalInput;
     [SerializeField] float horizontalMultiplier = 2;
 
     public float speedIncreasePerPoint = 0.1f;
@@ -17,44 +18,32 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpForce = 400f;
     [SerializeField] LayerMask groundMask;
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void FixedUpdate()
     {
+
         if (!alive) return;
-
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-        Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
-        
-
-        //if (horizontalInput == 0)
-        //    horizontalMove += Vector3.left * horizontalMultiplier;
-        //else if (horizontalInput == 2)
-        //    horizontalMove += Vector3.right * horizontalMultiplier;
-
-        rb.MovePosition(rb.position + forwardMove + horizontalMove);
+       // Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
+      
+        rb.MovePosition(rb.position + forwardMove);
     }
 
     private void Update()
     {
-       // horizontalInput = Input.GetAxis("Horizontal");
-
+         
         if (SwipeController.swipeRight)
         {
-            if (horizontalInput < 2)
-            {
-                horizontalInput++;
-            }
-            else horizontalInput = 0;
+            rb.AddForce(moowSpeed * Time.deltaTime, 0f, 0f, ForceMode.VelocityChange);
         }
 
         if (SwipeController.swipeLeft)
         {
-           
-            if (horizontalInput > -1)
-            {
-                horizontalInput--;
-            }
-            else horizontalInput = 0;
+            rb.AddForce(-moowSpeed * Time.deltaTime, 0f, 0f, ForceMode.VelocityChange);
         }
 
         
@@ -63,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-      
+
         if (transform.position.y < -5)
         {
             Die();
