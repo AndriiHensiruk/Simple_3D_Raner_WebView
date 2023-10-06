@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
 {
 
     int score;
+    float speed = 5f;
     public static GameManager inst;
-
     [SerializeField] Text scoreText;
 
     [SerializeField] PlayerMovement playerMovement;
@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
         scoreText.text = "SCORE: " + score;
         // Increase the player's speed
         playerMovement.speed += playerMovement.speedIncreasePerPoint;
+    }
+
+    public void PlayerZeroSpeed(bool Item)
+    {
+        playerMovement.speed = 0;
     }
 
     private void Awake()

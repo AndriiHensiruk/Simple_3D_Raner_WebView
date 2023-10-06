@@ -17,9 +17,10 @@ public class GroundTile : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (GameManager.inst.ShowScore() > 1)
-            groundSpawner.SpawnGateTile() ;
+            //return;
+            groundSpawner.SpawnGateTile();
         else
-        groundSpawner.SpawnTile(true);
+                    groundSpawner.SpawnTile(true);
 
         Destroy(gameObject, 2);
     }
@@ -37,7 +38,7 @@ public class GroundTile : MonoBehaviour
 
     public void SpawnPuck()
     {
-        int puckToSpawn = 3;
+        int puckToSpawn = 1;
         for (int i = 0; i < puckToSpawn; i++)
         {
             GameObject temp = Instantiate(puckPrefab, transform);

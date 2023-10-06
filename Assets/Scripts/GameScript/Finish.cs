@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Puck : MonoBehaviour
+public class Finish : MonoBehaviour
 {
-    [SerializeField] float turnSpeed = 90f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,16 +20,14 @@ public class Puck : MonoBehaviour
         }
 
         // Add to the player's score
-        GameManager.inst.IncrementScore();
+        GameManager.inst.PlayerZeroSpeed(true);
 
         // Destroy this coin object
         Destroy(gameObject);
     }
 
-    
     private void Update()
     {
-        transform.Rotate(0, 0, turnSpeed * Time.deltaTime);
 
     }
 }
