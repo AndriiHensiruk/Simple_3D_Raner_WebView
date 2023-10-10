@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
-    bool gameComplete = true;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,17 +28,9 @@ public class Goal : MonoBehaviour
         // Destroy this puck object
         Destroy(other.gameObject);
 
-        PlayerPrefs.SetInt("GameComplete", gameComplete ? 1 : 0);
-        PlayerPrefs.Save();
+        GameManager.inst.Win();
 
-        for (int i = 0; i < 5; i++)
-        {
-            if (i > 5)
-            {
-                SceneManager.LoadScene(2);
-            }
- 
-        }
+       
     }
 
 }
