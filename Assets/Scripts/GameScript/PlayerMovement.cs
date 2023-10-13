@@ -7,11 +7,11 @@ public class PlayerMovement : MonoBehaviour
     bool alive = true;
     
     public float speed = 5;
-    float moowSpeed = 1000;
+  
     [SerializeField] Rigidbody rb;
 
     float horizontalInput;
-    [SerializeField] float horizontalMultiplier = 2;
+    [SerializeField] float horizontalMultiplier = 200;
 
     public float speedIncreasePerPoint = 0.1f;
 
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!alive) return;
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-       // Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
+       //Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
       
         rb.MovePosition(rb.position + forwardMove);
     }
@@ -38,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
          
         if (SwipeController.swipeRight)
         {
-            rb.AddForce(moowSpeed * Time.deltaTime, 0f, 0f, ForceMode.VelocityChange);
+            rb.AddForce(horizontalMultiplier * Time.deltaTime, 0f, 0f, ForceMode.VelocityChange);
         }
 
         if (SwipeController.swipeLeft)
         {
-            rb.AddForce(-moowSpeed * Time.deltaTime, 0f, 0f, ForceMode.VelocityChange);
+            rb.AddForce(-horizontalMultiplier * Time.deltaTime, 0f, 0f, ForceMode.VelocityChange);
         }
 
         
