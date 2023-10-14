@@ -17,7 +17,7 @@ public class Goal : MonoBehaviour
         }
 
         // Check that the object we collided with is the player
-        if (other.gameObject.name != "Puck")
+        if (other.gameObject.name != "Ball")
         {
             return;
         }

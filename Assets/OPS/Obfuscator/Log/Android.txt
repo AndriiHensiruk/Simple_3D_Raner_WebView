@@ -43,6 +43,8 @@
 
 [Debug][OPS.OBF][OnAnalyse_Assets] Found methods in AnimationClip Packages/com.unity.timeline/Editor/StyleSheets/res/HumanoidDefault.anim (0):
 
+[Debug][OPS.OBF][OnAnalyse_Assets] Found methods in model Assets/Sprites/Game/FLE16D69E3T1NAG4TG4CHPNSL.obj (0):
+
 [Debug][OPS.OBF][OnAnalyse_Assets] Found methods in model Assets/Sprites/NBA BASKETBALL.obj (0):
 
 [Info][OPS.OBF][OnProcess_Assets] Process component Analyse Unity Animation Methods
@@ -431,7 +433,7 @@
   - UnityEngine.EventSystems.StandaloneInputModule
 
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found 5 Prefabs.
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found 153 Components in the prefabs.
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found 155 Components in the prefabs.
 [Info][OPS.OBF][OnAnalyse_Component_Prefabs] Process component Analyse Unity Event Component
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in GroundTile of type UnityEngine.Transform
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in GroundTile of type UnityEngine.BoxCollider
@@ -468,17 +470,6 @@
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Wall of type UnityEngine.MeshFilter
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Wall of type UnityEngine.MeshRenderer
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Wall of type UnityEngine.BoxCollider
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goal of type UnityEngine.Transform
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goal of type UnityEngine.MeshFilter
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goal of type UnityEngine.MeshRenderer
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goal of type UnityEngine.BoxCollider
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goal of type Goal
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.Transform
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.MeshFilter
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.MeshRenderer
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.CapsuleCollider
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.Rigidbody
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type ShootPuck
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goalkeeper of type UnityEngine.Transform
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goalkeeper of type UnityEngine.MeshRenderer
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Goalkeeper of type UnityEngine.CapsuleCollider
@@ -559,7 +550,6 @@
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Target of type UnityEngine.MeshFilter
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Target of type UnityEngine.MeshRenderer
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Target of type UnityEngine.CapsuleCollider
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Target of type Target
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Pos1 of type UnityEngine.Transform
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Pos2 of type UnityEngine.Transform
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Finish of type UnityEngine.Transform
@@ -575,6 +565,20 @@
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Wall (2) of type UnityEngine.MeshFilter
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Wall (2) of type UnityEngine.MeshRenderer
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Wall (2) of type UnityEngine.BoxCollider
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in FLE16D69E3T1NAG4TG4CHPNSL of type UnityEngine.Transform
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in FLE16D69E3T1NAG4TG4CHPNSL of type UnityEngine.BoxCollider
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in FLE16D69E3T1NAG4TG4CHPNSL of type Goal
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Object_TexMap_0 of type UnityEngine.Transform
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Object_TexMap_0 of type UnityEngine.MeshFilter
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Object_TexMap_0 of type UnityEngine.MeshRenderer
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in NBA BASKETBALL of type UnityEngine.Transform
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in NBA BASKETBALL of type ShootPuck
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in BASKET_BALL of type UnityEngine.Transform
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in BASKET_BALL of type UnityEngine.MeshFilter
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in BASKET_BALL of type UnityEngine.MeshRenderer
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in BASKET_BALL of type Puck
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in BASKET_BALL of type UnityEngine.Rigidbody
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in BASKET_BALL of type UnityEngine.CapsuleCollider
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.Transform
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.MeshFilter
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Find unity event methods in Puck of type UnityEngine.MeshRenderer
@@ -599,25 +603,25 @@
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for GateTite (1):
   - GateTile
 
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Goal for Goal
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for Goal (1):
-  - Goal
-
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference ShootPuck for Puck
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for Puck (1):
-  - ShootPuck
-
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Goalkeeper for Goalkeeper
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for Goalkeeper (1):
   - Goalkeeper
 
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Target for Target
-[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for Target (1):
-  - Target
-
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Finish for Finish
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for Finish (1):
   - Finish
+
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Goal for FLE16D69E3T1NAG4TG4CHPNSL
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for FLE16D69E3T1NAG4TG4CHPNSL (1):
+  - Goal
+
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference ShootPuck for NBA BASKETBALL
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for NBA BASKETBALL (1):
+  - ShootPuck
+
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Puck for BASKET_BALL
+[Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for BASKET_BALL (1):
+  - Puck
 
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference Puck for Puck
 [Debug][OPS.OBF][OnAnalyse_Component_Prefabs] Found mono script reference in serialized properties for Puck (1):
@@ -924,7 +928,6 @@
 [Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] Puck] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!
 [Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] ShootPuck] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!
 [Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] SwipeController] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!
-[Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] Target] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!
 [Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] SplashManager] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!
 [Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] RotateCube] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!
 [Info][OPS.OBF][OnAnalyse_Assemblies] Skip Type [[Assembly-CSharp] WebViewManager] Setting 'Obfuscate not obfuscatable in Unity assemblies' got deactivated!

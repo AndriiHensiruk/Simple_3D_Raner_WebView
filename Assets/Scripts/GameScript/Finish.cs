@@ -20,7 +20,7 @@ public class Finish : MonoBehaviour
         }
 
         // Add to the player's score
-        GameManager.inst.PlayerZeroSpeed(true);
+       GameManager.inst.PlayerZeroSpeed(true);
 
         // Destroy this coin object
         Destroy(gameObject);
