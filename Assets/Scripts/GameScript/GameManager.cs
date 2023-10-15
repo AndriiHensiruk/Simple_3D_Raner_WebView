@@ -9,13 +9,13 @@ public class GameManager : MonoBehaviour
 {
 
     int score;
-    float speed = 5f;
+    float forwardSpeed = 5f;
     public static GameManager inst;
     [SerializeField] Text scoreText;
     [SerializeField] GameObject  youWinText;
     [SerializeField] GameObject youLoosText;
     bool gameComplete = true;
-    [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] PlayerController playerController;
 
     public int ShowScore()
     {
@@ -26,13 +26,12 @@ public class GameManager : MonoBehaviour
     {
         score++;
         scoreText.text = "SCORE: " + score;
-        // Increase the player's speed
-        playerMovement.speed += playerMovement.speedIncreasePerPoint;
+
     }
 
     public void PlayerZeroSpeed(bool Item)
     {
-        playerMovement.speed = 0;
+        playerController.forwardSpeed = 0;
     }
 
     public void Win()

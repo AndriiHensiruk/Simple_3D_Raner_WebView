@@ -5,21 +5,24 @@ using System.Collections.Generic;
 public class Obstacle : MonoBehaviour
 {
 
-    PlayerMovement playerMovement;
-
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        playerMovement = GameObject.FindObjectOfType<PlayerMovement>();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Player")
+        if (other.gameObject.GetComponent<Obstacle>() != null)
         {
-            // Kill the player
-           playerMovement.Die();
+            Destroy(gameObject);
+            return;
         }
-    }
 
-   
+        // Check that the object we collided with is the player
+        if (other.gameObject.name != "Player")
+        {
+            return;
+        }
+
+        // Add to the player's score
+        GameManager.inst.YouLoose();
+
+        // Destroy this Player object
+        Destroy(other.gameObject);
+    }
 }
