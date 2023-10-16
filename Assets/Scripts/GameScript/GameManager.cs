@@ -25,9 +25,18 @@ public class GameManager : MonoBehaviour
     public void IncrementScore()
     {
         score++;
+        FindObjectOfType<AudioManager>().PlaySound("Ball");
         scoreText.text = "SCORE: " + score;
 
     }
+    public void DeleteScore()
+    {
+        int i = 5;
+        score = score -i;
+        scoreText.text = "SCORE: " + score;
+
+    }
+
 
     public void PlayerZeroSpeed(bool Item)
     {
@@ -47,7 +56,8 @@ public class GameManager : MonoBehaviour
     public void YouLoose()
     {
         youLoosText.SetActive(true);
-        
+        PlayerPrefs.SetInt("GameComplete", gameComplete ? 1 : 0);
+        PlayerPrefs.Save();
         Invoke("NextScene" , 3);
     }
 

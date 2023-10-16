@@ -22,7 +22,7 @@ public class Ball : MonoBehaviour
 
         // Add to the player's score
         GameManager.inst.IncrementScore();
-
+        FindObjectOfType<AudioManager>().PlaySound("Ball");
         // Destroy this coin object
         Destroy(gameObject);
     }

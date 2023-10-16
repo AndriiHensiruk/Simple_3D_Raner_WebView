@@ -24,7 +24,7 @@ public class TileManager : MonoBehaviour
             if (i == 0)
                 SpawnTile(0);
             else
-                SpawnTile(Random.Range(0, totalNumOfTiles));
+                SpawnTile(Random.Range(0, numberOfTiles));
         }
 
         //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -44,11 +44,11 @@ public class TileManager : MonoBehaviour
             
         }
 
-        if (GameManager.inst.ShowScore() ==  4)
+        if (GameManager.inst.ShowScore() == 100)
         {
             SpawnTile(totalNumOfTiles);
             finish = true;
-        }
+            GameManager.inst.Win();        }
 
     }
 

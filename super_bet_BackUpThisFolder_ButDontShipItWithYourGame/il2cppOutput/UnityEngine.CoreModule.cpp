@@ -24991,6 +24991,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAreaAttribute__ctor_m5FEE25A73C001A9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Single UnityEngine.Time::get_time()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) 
+{
+	typedef float (*Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B_ftn) ();
+	static Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_time()");
+	float icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 // System.Single UnityEngine.Time::get_deltaTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) 
 {
@@ -25028,6 +25038,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_fixedDeltaTime_m43136893D00AF5
 	static Time_get_fixedDeltaTime_m43136893D00AF5D5FE80AD05609558F6E2381381_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Time_get_fixedDeltaTime_m43136893D00AF5D5FE80AD05609558F6E2381381_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_fixedDeltaTime()");
+	float icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+// System.Single UnityEngine.Time::get_timeScale()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616 (const RuntimeMethod* method) 
+{
+	typedef float (*Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616_ftn) ();
+	static Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_timeScale()");
 	float icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
 }

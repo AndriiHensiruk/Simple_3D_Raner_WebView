@@ -19,10 +19,15 @@ public class Obstacle : MonoBehaviour
             return;
         }
 
-        // Add to the player's score
-        GameManager.inst.YouLoose();
+        GameManager.inst.DeleteScore();
+        FindObjectOfType<AudioManager>().PlaySound("Damage");
+        transform.Translate(Vector3.right * 3f * Time.deltaTime);
 
-        // Destroy this Player object
-        Destroy(other.gameObject);
+        if (GameManager.inst.ShowScore() < 0)
+        {
+            GameManager.inst.YouLoose();
+            Destroy(other.gameObject);
+        }
+        
     }
 }

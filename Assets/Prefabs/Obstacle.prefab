@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3357057198133609624}
   - component: {fileID: 4491250869054170207}
   - component: {fileID: 5977363989234236191}
+  - component: {fileID: 6302933182653487020}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -46,8 +47,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1783578, y: 4.8768578, z: 1}
-  m_Center: {x: 0.23232856, y: 1.9384289, z: 0}
+  m_Size: {x: 1.6874127, y: 5.258075, z: 1}
+  m_Center: {x: -0.119895935, y: 1.7478201, z: 0}
 --- !u!114 &4491250869054170207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +103,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6302933182653487020
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936115353748422868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 10c959c854d176c4ca1d5053ed94c4c8, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4b128dade510f004e81bafc678fafd06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &899496690284010428
 PrefabInstance:
   m_ObjectHideFlags: 0
