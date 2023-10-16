@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         youWinText.SetActive(true);
-        Time.timeScale = .5f;
-            SceneManager.LoadScene(2);
+       
+        Invoke("NextScene", 3);
 
         PlayerPrefs.SetInt("GameComplete", gameComplete ? 1 : 0);
         PlayerPrefs.Save();
@@ -47,9 +47,8 @@ public class GameManager : MonoBehaviour
     public void YouLoose()
     {
         youLoosText.SetActive(true);
-        Time.timeScale = .5f;
-        for (int i = 0; i > 5; i++)
-            SceneManager.LoadScene(2);
+        
+        Invoke("NextScene" , 3);
     }
 
     private void Awake()
@@ -60,5 +59,10 @@ public class GameManager : MonoBehaviour
     public void Exit ()
     {
         SceneManager.LoadScene("Splash_Scene");
+    }
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
