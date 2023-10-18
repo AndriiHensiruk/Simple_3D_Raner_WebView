@@ -11,6 +11,7 @@ public class TileManager : MonoBehaviour
     public int totalNumOfTiles = 5;
     private bool finish = false;
     public float zSpawn = 0;
+    public float basketballCount = 100;
 
     [SerializeField] private Transform playerTransform;
 
@@ -44,7 +45,7 @@ public class TileManager : MonoBehaviour
             
         }
 
-        if (GameManager.inst.ShowScore() == 100)
+        if (GameManager.inst.ShowScore() == basketballCount)
         {
             SpawnTile(totalNumOfTiles);
             finish = true;

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text scoreText;
     [SerializeField] GameObject  youWinText;
     [SerializeField] GameObject youLoosText;
+    [SerializeField] GameObject editMenu;
     bool gameComplete = true;
     [SerializeField] PlayerController playerController;
 
@@ -66,13 +67,21 @@ public class GameManager : MonoBehaviour
         inst = this;
     }
 
-    public void Exit ()
+    public void EditMenuShov ()
     {
-        SceneManager.LoadScene("Splash_Scene");
+        editMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
-
+    
     public void NextScene()
     {
         SceneManager.LoadScene(2);
+    }
+
+   
+
+    public void Quit()
+    {
+        SceneManager.LoadScene(0);
     }
 }
